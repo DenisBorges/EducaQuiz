@@ -1,0 +1,23 @@
+<Fase>
+  <PontosObrigatorios>0</PontosObrigatorios>
+<Perguntas>
+  <Pergunta id="1">Qual o nome do Animal</Pergunta>
+  <RespostaCorreta>1</RespostaCorreta>
+  <Pontos>100</Pontos>
+  <Alternativas>
+    <Alternativa id="1">Cao</Alternativa>
+    <Alternativa id="2">Gato</Alternativa>
+    <Alternativa id="3">Cachorro</Alternativa>
+  </Alternativas>
+</Perguntas>
+  <Perguntas>
+    <Pergunta id="1">Qual o nome do Animal</Pergunta>
+    <RespostaCorreta>1</RespostaCorreta>
+    <Pontos>100</Pontos>
+    <Alternativas>
+      <Alternativa id="1">Cao</Alternativa>
+      <Alternativa id="2">Gato</Alternativa>
+      <Alternativa id="3">Cachorro</Alternativa>
+    </Alternativas>
+  </Perguntas>
+</Fase>

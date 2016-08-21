@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/alertdialog_relativeLayout">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nome:"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/alert_nome" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alert_diminui"
+            android:src="@drawable/imagem1"
+
+            android:background="@null"
+
+            android:layout_gravity="center_vertical" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/central">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="4"
+                android:ems="1"
+                android:id="@+id/alert_idade"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:textSize="50dp"
+                android:textIsSelectable="false"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:editable="false" />
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alert_aumenta"
+            android:src="@drawable/imagem2"
+            android:background="@null"
+
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

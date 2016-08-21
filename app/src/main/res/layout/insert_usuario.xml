@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/White">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView3"
+        android:src="@drawable/logo_educa_quiz"
+        android:visibility="visible"
+        android:alpha="0.3"
+        android:adjustViewBounds="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Novo Jogador"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignLeft="@+id/nomeUsuario"
+        android:layout_alignStart="@+id/nomeUsuario" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/nomeUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alert_diminui1"
+        android:src="@drawable/imagem1"
+
+        android:background="@null"
+
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@+id/relativeLayout"
+        android:layout_toStartOf="@+id/relativeLayout"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_alignBottom="@+id/relativeLayout" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/central"
+        android:gravity="center"
+
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="4"
+            android:ems="1"
+            android:id="@+id/idadeUsuario"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+            android:textSize="50dp"
+            android:textIsSelectable="false"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:editable="false" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alert_aumenta1"
+        android:src="@drawable/imagem2"
+        android:background="@null"
+
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_alignBottom="@+id/relativeLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Idade:"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:layout_below="@+id/nomeUsuario"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:id="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:onClick="CadastrarUsuario"
+
+        android:layout_below="@+id/relativeLayout" />
+
+
+</RelativeLayout>
